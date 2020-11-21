@@ -1,0 +1,133 @@
+2020-11-21 15:26:34.069  INFO 2822 --- [main] c.s.user.RestMongoUserApplication        : Starting RestMongoUserApplication using Java 11.0.9 on soumyaranjan-Pc with PID 2822 (/home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user/target/classes started by soumyaranjan in /home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user)
+2020-11-21 15:26:34.073  INFO 2822 --- [main] c.s.user.RestMongoUserApplication        : No active profile set, falling back to default profiles: default
+2020-11-21 15:26:34.931  INFO 2822 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-21 15:26:34.990  INFO 2822 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
+2020-11-21 15:26:35.458  INFO 2822 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-11-21 15:26:35.469  INFO 2822 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-21 15:26:35.469  INFO 2822 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-21 15:26:35.542  INFO 2822 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-21 15:26:35.543  INFO 2822 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1379 ms
+2020-11-21 15:26:35.608  WARN 2822 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'serviceRef'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.symentix.user.service.IUserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-21 15:26:35.612  INFO 2822 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-21 15:26:35.628  INFO 2822 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-21 15:26:35.645 ERROR 2822 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field serviceRef in com.symentix.user.controller.UserController required a bean of type 'com.symentix.user.service.IUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.symentix.user.service.IUserService' in your configuration.
+
+2020-11-21 15:27:47.934  INFO 2899 --- [main] c.s.user.RestMongoUserApplication        : Starting RestMongoUserApplication using Java 11.0.9 on soumyaranjan-Pc with PID 2899 (/home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user/target/classes started by soumyaranjan in /home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user)
+2020-11-21 15:27:47.938  INFO 2899 --- [main] c.s.user.RestMongoUserApplication        : No active profile set, falling back to default profiles: default
+2020-11-21 15:27:48.947  INFO 2899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-21 15:27:49.024  INFO 2899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 MongoDB repository interfaces.
+2020-11-21 15:27:49.561  INFO 2899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-11-21 15:27:49.572  INFO 2899 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-21 15:27:49.573  INFO 2899 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-21 15:27:49.643  INFO 2899 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-21 15:27:49.644  INFO 2899 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2020-11-21 15:27:49.787  INFO 2899 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-21 15:27:49.853  INFO 2899 --- [cluster-ClusterId{value='5fb9784506305d4df53299c8', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2020-11-21 15:27:49.853  INFO 2899 --- [cluster-rtt-ClusterId{value='5fb9784506305d4df53299c8', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2020-11-21 15:27:49.859  INFO 2899 --- [cluster-ClusterId{value='5fb9784506305d4df53299c8', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23542104}
+2020-11-21 15:27:50.285  INFO 2899 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 15:27:50.490  INFO 2899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-11-21 15:27:50.516  INFO 2899 --- [main] c.s.user.RestMongoUserApplication        : Started RestMongoUserApplication in 3.049 seconds (JVM running for 3.827)
+2020-11-21 15:31:02.226  INFO 2899 --- [http-nio-9091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-21 15:31:02.227  INFO 2899 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-21 15:31:02.229  INFO 2899 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-21 15:31:02.295 DEBUG 2899 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 15:31:02.345  INFO 2899 --- [http-nio-9091-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:4}] to localhost:27017
+2020-11-21 15:33:19.315 DEBUG 2899 --- [http-nio-9091-exec-5] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, rollNo, email, mobile, _class]
+2020-11-21 15:33:27.913 DEBUG 2899 --- [http-nio-9091-exec-6] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 15:36:53.964 DEBUG 2899 --- [http-nio-9091-exec-9] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, username, rollNo, email, mobile, _class]
+2020-11-21 15:37:01.386 DEBUG 2899 --- [http-nio-9091-exec-10] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 15:37:57.894 DEBUG 2899 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, username, rollNo, email, mobile, _class]
+2020-11-21 15:38:02.224 DEBUG 2899 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 15:43:38.965  WARN 2899 --- [http-nio-9091-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{userId}"]
+2020-11-21 15:51:34.369  WARN 2899 --- [http-nio-9091-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{userId}"]
+2020-11-21 15:51:52.515 DEBUG 2899 --- [http-nio-9091-exec-9] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 15:58:37.022  INFO 2899 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-21 15:58:37.091  INFO 2899 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-21 15:58:37.098  INFO 2899 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:4}] to localhost:27017 because the pool has been closed.
+2020-11-21 16:39:44.300  INFO 3669 --- [main] c.s.user.RestMongoUserApplication        : Starting RestMongoUserApplication using Java 11.0.9 on soumyaranjan-Pc with PID 3669 (/home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user/target/classes started by soumyaranjan in /home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user)
+2020-11-21 16:39:44.304  INFO 3669 --- [main] c.s.user.RestMongoUserApplication        : No active profile set, falling back to default profiles: default
+2020-11-21 16:39:45.203  INFO 3669 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-21 16:39:45.264  INFO 3669 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 MongoDB repository interfaces.
+2020-11-21 16:39:45.779  INFO 3669 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-11-21 16:39:45.789  INFO 3669 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-21 16:39:45.789  INFO 3669 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-21 16:39:45.851  INFO 3669 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-21 16:39:45.851  INFO 3669 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+2020-11-21 16:39:46.009  INFO 3669 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-21 16:39:46.073  INFO 3669 --- [cluster-rtt-ClusterId{value='5fb9892290e4ba40cd487a4a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2020-11-21 16:39:46.073  INFO 3669 --- [cluster-ClusterId{value='5fb9892290e4ba40cd487a4a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2020-11-21 16:39:46.080  INFO 3669 --- [cluster-ClusterId{value='5fb9892290e4ba40cd487a4a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23665244}
+2020-11-21 16:39:46.503  INFO 3669 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 16:39:46.701  INFO 3669 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-11-21 16:39:46.722  INFO 3669 --- [main] c.s.user.RestMongoUserApplication        : Started RestMongoUserApplication in 2.838 seconds (JVM running for 3.546)
+2020-11-21 16:41:15.711  INFO 3669 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-21 16:41:15.783  INFO 3669 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-21 16:41:18.340  INFO 3742 --- [main] c.s.user.RestMongoUserApplication        : Starting RestMongoUserApplication using Java 11.0.9 on soumyaranjan-Pc with PID 3742 (/home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user/target/classes started by soumyaranjan in /home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user)
+2020-11-21 16:41:18.344  INFO 3742 --- [main] c.s.user.RestMongoUserApplication        : No active profile set, falling back to default profiles: default
+2020-11-21 16:41:18.978  INFO 3742 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-21 16:41:19.036  INFO 3742 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
+2020-11-21 16:41:19.492  INFO 3742 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-11-21 16:41:19.503  INFO 3742 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-21 16:41:19.503  INFO 3742 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-21 16:41:19.571  INFO 3742 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-21 16:41:19.571  INFO 3742 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1148 ms
+2020-11-21 16:41:19.735  INFO 3742 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-21 16:41:19.798  INFO 3742 --- [cluster-rtt-ClusterId{value='5fb9897f02910113b6033885', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2020-11-21 16:41:19.802  INFO 3742 --- [cluster-ClusterId{value='5fb9897f02910113b6033885', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2020-11-21 16:41:19.804  INFO 3742 --- [cluster-ClusterId{value='5fb9897f02910113b6033885', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20258519}
+2020-11-21 16:41:20.251  INFO 3742 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 16:41:20.458  INFO 3742 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-11-21 16:41:20.475  INFO 3742 --- [main] c.s.user.RestMongoUserApplication        : Started RestMongoUserApplication in 2.569 seconds (JVM running for 3.386)
+2020-11-21 16:43:11.482  INFO 3742 --- [http-nio-9091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-21 16:43:11.482  INFO 3742 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-21 16:43:11.484  INFO 3742 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-11-21 16:43:11.562 DEBUG 3742 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "userId" : 1} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 16:43:11.576 DEBUG 3742 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : 1} fields: {} in db.collection: lev1rest_cust.user
+2020-11-21 16:43:11.600  INFO 3742 --- [http-nio-9091-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:9}] to localhost:27017
+2020-11-21 16:43:30.967 DEBUG 3742 --- [http-nio-9091-exec-3] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 16:44:21.341 DEBUG 3742 --- [http-nio-9091-exec-4] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "userId" : 1} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 16:44:21.345 DEBUG 3742 --- [http-nio-9091-exec-4] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : 1} fields: {} in db.collection: lev1rest_cust.user
+2020-11-21 16:46:27.599  INFO 3742 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-21 16:46:27.667  INFO 3742 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-21 16:46:27.672  INFO 3742 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:9}] to localhost:27017 because the pool has been closed.
+2020-11-21 16:46:30.325  INFO 3882 --- [main] c.s.user.RestMongoUserApplication        : Starting RestMongoUserApplication using Java 11.0.9 on soumyaranjan-Pc with PID 3882 (/home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user/target/classes started by soumyaranjan in /home/soumyaranjan/soumya/Springboot workspace/w4_lev1_rest_mongo_user)
+2020-11-21 16:46:30.329  INFO 3882 --- [main] c.s.user.RestMongoUserApplication        : No active profile set, falling back to default profiles: default
+2020-11-21 16:46:30.960  INFO 3882 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-21 16:46:31.017  INFO 3882 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interfaces.
+2020-11-21 16:46:31.453  INFO 3882 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-11-21 16:46:31.462  INFO 3882 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-21 16:46:31.462  INFO 3882 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-21 16:46:31.517  INFO 3882 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-21 16:46:31.517  INFO 3882 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1126 ms
+2020-11-21 16:46:31.652  INFO 3882 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-21 16:46:31.708  INFO 3882 --- [cluster-ClusterId{value='5fb98ab79de423738e12d77a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2020-11-21 16:46:31.708  INFO 3882 --- [cluster-rtt-ClusterId{value='5fb98ab79de423738e12d77a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+2020-11-21 16:46:31.715  INFO 3882 --- [cluster-ClusterId{value='5fb98ab79de423738e12d77a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18188710}
+2020-11-21 16:46:32.104  INFO 3882 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 16:46:32.279  INFO 3882 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-11-21 16:46:32.297  INFO 3882 --- [main] c.s.user.RestMongoUserApplication        : Started RestMongoUserApplication in 2.401 seconds (JVM running for 3.305)
+2020-11-21 16:46:41.650  INFO 3882 --- [http-nio-9091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-21 16:46:41.650  INFO 3882 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-21 16:46:41.652  INFO 3882 --- [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-21 16:46:41.757 DEBUG 3882 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "userId" : 1} fields: Document{{}} for class: class com.symentix.user.dto.User in collection: user
+2020-11-21 16:46:41.769 DEBUG 3882 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : 1} fields: {} in db.collection: lev1rest_cust.user
+2020-11-21 16:46:41.788  INFO 3882 --- [http-nio-9091-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:12}] to localhost:27017
